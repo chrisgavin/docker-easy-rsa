@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+set -eu
+export EASYRSA_PKI="/mnt/pki/"
+/usr/share/easyrsa/easyrsa "$@"
