@@ -1,6 +1,6 @@
 FROM alpine as downloader
 RUN apk --no-cache add curl && \
-	curl --location --output easyrsa.tar.gz "https://github.com/OpenVPN/easy-rsa/releases/download/v3.0.4/EasyRSA-3.0.4.tgz" && \
+	curl --location --output easyrsa.tar.gz "https://github.com/OpenVPN/easy-rsa/releases/download/v3.0.8/EasyRSA-3.0.8.tgz" && \
 	tar -xvf easyrsa.tar.gz && \
 	mv ./EasyRSA-*/ ./easyrsa/
 
